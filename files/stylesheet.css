@@ -1,5 +1,0 @@
-.header  {width: 100%; height: 100px; float: left; background-color: rgb(000, 000, 000); text-align: center;}
-.menu    {width: 100%; height:  50px; clear: left; background-color: rgb(255, 192, 000); text-align: center; position: sticky; top: 0;}
-.submenu {width:  20%; height: 420px; float: left; background-color: rgb(255, 255, 000);}
-.content {width:  80%; height: 420px; float: left; background-color: rgb(255, 255, 255);}
-.footer  {width: 100%; height:  50px; clear: left; background-color: rgb(000, 000, 000); text-align: center;}
