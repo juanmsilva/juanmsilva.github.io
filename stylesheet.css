@@ -52,12 +52,24 @@ body {font-family:poppins, sans-serif;
   background-image:url(background_main.jpg);
   b ackground-repeat:repeat;
 }
-.main hr {width:15%}
+.main h r {width:15%}
 .footer {
   background:#000;
   color:#999;
   padding:1px 0px;
   text-align:center;
   font-size:12px;
+}
+h 2 {background-color:rgba(127,127,255,0.2);
+  margin:0px;
+  padding:10px;
+  border-left:10px solid ;
+}
+/* #900 */
+/* #f40 */
+h 5 {background-color:rgba(0,127,127,0.2);
+  margin:0px;
+  padding:10px;
+  border-left:10px solid rgba(0,127,127,0.2);
 }
 @media screen and (max-width: 700px) {.row, .navbar {flex-direction: column;}}
