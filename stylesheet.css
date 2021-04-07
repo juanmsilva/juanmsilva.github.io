@@ -1,23 +1,63 @@
 * {box-sizing: border-box;}
-body {font-family:poppins, sans-serif; margin: 0;}
-.header           {background:#000; padding: 1px; text-align: center; color: #0af; font: 20px sofia;
-    background-image: url(background_title.jpg); background-repeat: no-repeat; background-position: top center;}
-
-.navbar           {background:#fb0; display: flex; justify-content: center;f ont-family:Muli;
-  font-size: 14px;text-align: center;}
-  .navbar a {color: black; padding: 10px 20px; text-decoration: none;}
-  .navbar a:link    {background: #fb0;}
+body {font-family:poppins, sans-serif;
+  margin: 0;
+}
+.header {background:#000;
+  padding:1px;
+  text-align:center;
+  color:#0af;
+  font:20px sofia;
+  background-image:url(background_title.jpg);
+  background-repeat:no-repeat;
+  background-position: top center;
+}
+.navbar {background:#fb0;
+  display:flex;
+  justify-content:center;
+  f ont-family:Muli;
+  font-size:14px;
+  text-align:center;
+}
+  .navbar a {color:black;
+    padding:10px 20px;
+    text-decoration:none;
+  }
+  .navbar a:link {background: #fb0;}
   .navbar a:visited {background: #fb0;}
-  .navbar a:hover   {background: #f90;}
-  .navbar a:active  {background: #f60;}
-.row {display: flex; flex-wrap: wrap;}
-.side    {background:#ddd; flex: 30%; padding: 20px;}
-.side img {width:250px; display: block; margin-left: auto; margin-right: auto;
-   margin-top: 10px; margin-bottom: 20px;}
-.main    {background:white; flex: 70%; padding: 20px 50px 145px 50px; text-align: justify;
-  line-height: 1.4; h eight:415px;
-          background-image: url(background_main.jpg);b ackground-repeat: repeat;}
-.fakeimg {background:#f1f1f1;color:#999; width: 100%; padding: 20px;}
-.footer  {background:#000;color:#999;padding: 1px 0px; text-align: center; font-size: 12px;}
-
+  .navbar a:hover {background: #f90;}
+  .navbar a:active {background: #f60;}
+.row {display:flex;
+  flex-wrap:wrap;
+}
+.side {
+  background:#ddd;
+  flex:30%;
+  padding:20px;
+}
+.side img {
+  width:250px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.main {
+  background:white;
+  flex:70%;
+  padding:30px 50px 135px 50px;
+  text-align:justify;
+  line-height: 1.4;
+  h eight:415px;
+  background-image:url(background_main.jpg);
+  b ackground-repeat:repeat;
+}
+.main hr {width:15%}
+.footer {
+  background:#000;
+  color:#999;
+  padding:1px 0px;
+  text-align:center;
+  font-size:12px;
+}
 @media screen and (max-width: 700px) {.row, .navbar {flex-direction: column;}}
