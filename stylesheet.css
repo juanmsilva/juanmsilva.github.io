@@ -40,11 +40,11 @@ hr {margin:8px 0 12px 0;}
   padding:4px 8px;
   border-radius:50%;
   transition:all 0.3s ease;
-  color:#fff;
+  color:#000;
 }
-a.facebook:hover  {background: #4267b2;}
-a.twitter:hover   {background: #55acee;}
-a.instagram:hover {background: #dd2a7b;}
+a.facebook:hover  {background: #4267b2;color:#fff;}
+a.twitter:hover   {background: #55acee;color:#fff;}
+a.instagram:hover {background: #dd2a7b;color:#fff;}
 
 .row {display:flex;
   flex-wrap:wrap;
