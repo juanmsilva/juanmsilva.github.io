@@ -4,7 +4,12 @@ h1 {margin:0;font-size:37px;}
 h2 {margin:-4px 0;}
 h5 {margin:15px 0 0 0;}
 p {margin:0;}
-hr {margin:8px 0 12px 0;}
+li {margin-left:-21px;}
+hr {
+  margin:10px 150px 12px -10px;
+  height:2px;
+  border-width:0;
+  background-color:gray}
 
 .header {
   background:#000 url(background_title.jpg) no-repeat top center;
@@ -34,12 +39,12 @@ hr {margin:8px 0 12px 0;}
 
 .icon-bar {
   position:absolute;
-  top:122px;
+  top:121px;
   right:15px;
 }
 .icon-bar a {
   padding:4px 8px;
-  border-radius:50%;
+  border-radius:30%;
   transition:all 0.3s ease;
   color:#fff;
 }
@@ -67,17 +72,29 @@ a.instagram:hover {background: #dd2a7b;}
 .main {
   flex:70%;
   background-image:url(background_main.jpg);
-  padding:30px 60px 0 50px;
+  padding:30px 50px 0 50px;
   text-align:justify;
   line-height:1.4;
 }
-.main img {
-  width:130px;
+.main_img {
+  position:relative;
   float:right;
-  padding:4px;
-  margin:0 0 0 30px;
+  top:-14px
+}
+.main_img img {
+  width:130px;
+  padding:4px 4px 18px 4px;
+  margin:0 0 -7px 30px;
   border:2px solid #bbb;
-  border-radius:20px;
+  border-radius:15px;
+}
+.img_text {
+  position:absolute;
+  padding-left:30px;
+  bottom:0;
+  width: 100%;
+  text-align: center;
+  font-size:12px;
 }
 .footer {
   background:#000;
