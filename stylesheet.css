@@ -17,9 +17,9 @@ hr{
   text-align:center;
   color:#0af;
   font:20px sofia;
-  text-shadow:1px 1px 25px #0af;
+  text-shadow:1px 1px 25px #0bf;
   animation-name:header;
-  animation-duration:4s;
+  animation-duration:2s;
 }
 @keyframes header{
   from{color: black;}
