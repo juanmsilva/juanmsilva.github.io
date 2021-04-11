@@ -86,6 +86,18 @@ a.instagram:hover{background:#dd2a7b;transition:background .5s ease;}
   border:2px solid #bbb;
   border-radius:30px;
   display:block;
+  perspective:1000px;
+  animation-name:side_img;
+  animation-duration:2s;
+}
+@keyframes side_img{
+from{
+  transform:rotateY(45deg);
+  opacity:0;
+  }
+to{transform:rotateY(0deg);
+  opacity:1;
+  }
 }
 .main{
   flex:70%;
