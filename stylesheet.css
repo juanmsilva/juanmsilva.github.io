@@ -46,8 +46,8 @@ hr{
 }
 .navbar a:link   {background:#fb0;}
 .navbar a:visited{background:#fb0;}
-.navbar a:hover  {background:#f80;transition:background .5s ease;}
-.navbar a:active {background:#f40;}
+.navbar a:hover  {background:#f80;transition:background .3s ease;}
+.navbar a:active {background:#f40;transition:background 0s ease;}
 
 .icon-bar{
   position:absolute;
