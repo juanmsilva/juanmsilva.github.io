@@ -117,6 +117,17 @@ to{transform:rotateY(0deg);
   margin:0 0 -7px 30px;
   border:2px solid #bbb;
   border-radius:15px;
+  animation-name:mainimg;
+  animation-duration:2s;
+}
+@keyframes mainimg{
+from{
+  transform:rotateY(45deg);
+  opacity:0;
+  }
+to{transform:rotateY(0deg);
+  opacity:1;
+  }
 }
 .img_text{
   position:absolute;
