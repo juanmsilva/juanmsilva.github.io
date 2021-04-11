@@ -1,0 +1,317 @@
+*{box-sizing:border-box;}
+body{font-family:poppins,sans-serif;margin:0;}
+h1{margin:0;font-size:37px;}
+h2{margin:-4px 0;}
+h5{margin:15px 0 0 0;}
+p{margin:0;}
+li{margin-left:-21px;}
+hr{
+  margin:10px 150px 12px -10px;
+  height:2px;
+  border-width:0;
+  background-color:gray
+}
+.header{
+  background:#000 url(background_title.jpg) no-repeat top center;
+  padding:28px;
+  text-align:center;
+  color:#0af;
+  font:20px sofia;
+  text-shadow:1px 1px 25px #0bf;
+  animation-name:header;
+  animation-duration:2s;
+}
+@keyframes header{
+  from{color: black;}
+  to{color: #0af;}
+}
+.navbar{
+  display:flex;
+  background:#fb0;
+  justify-content:center;
+  font-size:14px;
+  animation-name:navbar;
+  animation-duration:1s;
+}
+@keyframes navbar{
+  from{font-size:16px;}
+  to{font-size:14px;}
+}
+.navbar a{
+  color:black;
+  padding:9px 20px;
+  text-decoration:none;
+  text-align:center;
+  background:rgba(0,0,0,0);
+}
+.navbar a:link   {background:#fb0;}
+.navbar a:visited{background:#fb0;}
+.navbar a:hover  {background:#f80;transition:background .3s ease;}
+.navbar a:active {background:#f40;transition:background 0s ease;}
+
+.icon-bar{
+  position:absolute;
+  top:121px;
+  right:15px;
+}
+.icon-bar a{
+  padding:4px 8px;
+  border-radius:30%;
+  color:#fff;
+  animation-name:icon-bar;
+  animation-duration:2s;
+}
+@keyframes icon-bar{
+  from{padding:10px 20px;}
+  to{padding:4px 8px;}
+}
+a.facebook:hover {background:#4267b2;transition:background .5s ease;}
+a.twitter:hover  {background:#55acee;transition:background .5s ease;}
+a.instagram:hover{background:#dd2a7b;transition:background .5s ease;}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  min-height:422px;
+}
+.side{
+  flex:30%;
+  background:#ddd;
+  padding:20px;
+}
+.side img{
+  width:250px;
+  padding:5px;
+  margin:20px auto;
+  border:2px solid #bbb;
+  border-radius:30px;
+  display:block;
+  perspective:1000px;
+  animation-name:side_img;
+  animation-duration:2s;
+}
+@keyframes side_img{
+from{
+  transform:rotateY(45deg);
+  opacity:0;
+  }
+to{transform:rotateY(0deg);
+  opacity:1;
+  }
+}
+.main{
+  flex:70%;
+  background-image:url(background_main.jpg);
+  padding:30px 50px 0 50px;
+  text-align:justify;
+  line-height:1.4;
+}
+.main_img{
+  position:relative;
+  float:right;
+  top:-14px;
+}
+.main_img img{
+  width:130px;
+  padding:4px 4px 18px 4px;
+  margin:0 0 -7px 30px;
+  border:2px solid #bbb;
+  border-radius:15px;
+  animation-name:mainimg;
+  animation-duration:2s;
+}
+@keyframes mainimg{
+from{
+  transform:rotateY(45deg);
+  opacity:0;
+  }
+to{transform:rotateY(0deg);
+  opacity:1;
+  }
+}
+.img_text{
+  position:absolute;
+  padding-left:30px;
+  bottom:0;
+  width:100%;
+  text-align:center;
+  font-size:12px;
+}
+.footer{
+  background:#000;
+  color:#999;
+  padding:13px;
+  text-align:center;
+  font-size:12px;
+  animation-name:footer;
+  animation-duration:1s;
+}
+@keyframes footer{
+  from{
+    color:#000;
+    padding:4px;
+  }
+  to{
+    color:#999;
+    padding:13px;
+  }
+}
+@media screen and (max-width: 950px) {.row, .navbar {flex-direction: column;}}*{box-sizing:border-box;}
+body{font-family:poppins,sans-serif;margin:0;}
+h1{margin:0;font-size:37px;}
+h2{margin:-4px 0;}
+h5{margin:15px 0 0 0;}
+p{margin:0;}
+li{margin-left:-21px;}
+hr{
+  margin:10px 150px 12px -10px;
+  height:2px;
+  border-width:0;
+  background-color:gray
+}
+.header{
+  background:#000 url(background_title.jpg) no-repeat top center;
+  padding:28px;
+  text-align:center;
+  color:#0af;
+  font:20px sofia;
+  text-shadow:1px 1px 25px #0bf;
+  animation-name:header;
+  animation-duration:2s;
+}
+@keyframes header{
+  from{color: black;}
+  to{color: #0af;}
+}
+.navbar{
+  display:flex;
+  background:#fb0;
+  justify-content:center;
+  font-size:14px;
+  animation-name:navbar;
+  animation-duration:1s;
+}
+@keyframes navbar{
+  from{font-size:16px;}
+  to{font-size:14px;}
+}
+.navbar a{
+  color:black;
+  padding:9px 20px;
+  text-decoration:none;
+  text-align:center;
+  background:rgba(0,0,0,0);
+}
+.navbar a:link   {background:#fb0;}
+.navbar a:visited{background:#fb0;}
+.navbar a:hover  {background:#f80;transition:background .3s ease;}
+.navbar a:active {background:#f40;transition:background 0s ease;}
+
+.icon-bar{
+  position:absolute;
+  top:121px;
+  right:15px;
+}
+.icon-bar a{
+  padding:4px 8px;
+  border-radius:30%;
+  color:#fff;
+  animation-name:icon-bar;
+  animation-duration:2s;
+}
+@keyframes icon-bar{
+  from{padding:10px 20px;}
+  to{padding:4px 8px;}
+}
+a.facebook:hover {background:#4267b2;transition:background .5s ease;}
+a.twitter:hover  {background:#55acee;transition:background .5s ease;}
+a.instagram:hover{background:#dd2a7b;transition:background .5s ease;}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  min-height:422px;
+}
+.side{
+  flex:30%;
+  background:#ddd;
+  padding:20px;
+}
+.side img{
+  width:250px;
+  padding:5px;
+  margin:20px auto;
+  border:2px solid #bbb;
+  border-radius:30px;
+  display:block;
+  perspective:1000px;
+  animation-name:side_img;
+  animation-duration:2s;
+}
+@keyframes side_img{
+from{
+  transform:rotateY(45deg);
+  opacity:0;
+  }
+to{transform:rotateY(0deg);
+  opacity:1;
+  }
+}
+.main{
+  flex:70%;
+  background-image:url(background_main.jpg);
+  padding:30px 50px 0 50px;
+  text-align:justify;
+  line-height:1.4;
+}
+.main_img{
+  position:relative;
+  float:right;
+  top:-14px;
+}
+.main_img img{
+  width:130px;
+  padding:4px 4px 18px 4px;
+  margin:0 0 -7px 30px;
+  border:2px solid #bbb;
+  border-radius:15px;
+  animation-name:mainimg;
+  animation-duration:2s;
+}
+@keyframes mainimg{
+from{
+  transform:rotateY(45deg);
+  opacity:0;
+  }
+to{transform:rotateY(0deg);
+  opacity:1;
+  }
+}
+.img_text{
+  position:absolute;
+  padding-left:30px;
+  bottom:0;
+  width:100%;
+  text-align:center;
+  font-size:12px;
+}
+.footer{
+  background:#000;
+  color:#999;
+  padding:13px;
+  text-align:center;
+  font-size:12px;
+  animation-name:footer;
+  animation-duration:1s;
+}
+@keyframes footer{
+  from{
+    color:#000;
+    padding:4px;
+  }
+  to{
+    color:#999;
+    padding:13px;
+  }
+}
+@media screen and (max-width: 950px) {.row, .navbar {flex-direction: column;}}
