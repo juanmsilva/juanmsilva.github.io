@@ -1,166 +1,50 @@
-*{box-sizing:border-box;}
-body{font-family:poppins,sans-serif;margin:0;}
-h1{margin:0;font-size:37px;}
-h2{margin:-4px 0;}
-h5{margin:15px 0 0 0;}
-p{margin:0;}
-li{margin-left:-21px;}
-hr{
-  margin:10px 150px 12px -10px;
-  height:2px;
-  border-width:0;
-  background-color:gray
-}
-.header{
-  background:#000 url(background_title.jpg) no-repeat top center;
-  padding:28px;
-  text-align:center;
-  color:#0af;
-  font:20px sofia;
-  text-shadow:1px 1px 25px #0bf;
-  animation-name:header;
-  animation-duration:2s;
-}
-@keyframes header{
-  from{color: black;}
-  to{color: #0af;}
-}
-.navbar{
-  display:flex;
-  background:#fb0;
-  justify-content:center;
-  font-size:14px;
-  animation-name:navbar;
-  animation-duration:1s;
-}
-@keyframes navbar{
-  from{font-size:16px;}
-  to{font-size:14px;}
-}
-.navbar a{
-  color:black;
-  padding:9px 20px;
-  text-decoration:none;
-  text-align:center;
-  background:rgba(0,0,0,0);
-}
-.navbar a:link   {background:#fb0;}
-.navbar a:visited{background:#fb0;}
-.navbar a:hover  {background:#f80;transition:background .3s ease;}
-.navbar a:active {background:#f40;transition:background 0s ease;}
-
-.icon-bar{
-  position:absolute;
-  top:15px;
-  right:15px;
-}
-.icon-bar a{
-  padding:4px 8px;
-  border-radius:30%;
-  color:#fff;
-  animation-name:icon-bar;
-  animation-duration:1.2s;
-}
-@keyframes icon-bar{
-  from{
-    padding:10px 20px;
-    color:#000;
-  }
-  to{
-    padding:4px 8px;
-    color:#ddd;
-  }
-}
-a.facebook:hover {background:#4267b2;transition:background .5s ease;}
-a.twitter:hover  {background:#55acee;transition:background .5s ease;}
-a.instagram:hover{background:#dd2a7b;transition:background .5s ease;}
-a.slack:hover    {background:#4a154b;transition:background .5s ease;}
-
-.row{
-  display:flex;
-  flex-wrap:wrap;
-  min-height:422px;
-}
-.side{
-  flex:30%;
-  background:#ddd;
-  padding:20px;
-}
-.side img{
-  width:250px;
-  padding:5px;
-  margin:20px auto;
-  border:2px solid #bbb;
-  border-radius:30px;
-  display:block;
-  perspective:1000px;
-  animation-name:side_img;
-  animation-duration:2s;
-}
-@keyframes side_img{
-from{
-  transform:rotateY(45deg);
-  opacity:0;
-  }
-to{transform:rotateY(0deg);
-  opacity:1;
-  }
-}
-.main{
-  flex:70%;
-  background-image:url(background_main.jpg);
-  padding:30px 50px 0 50px;
-  text-align:justify;
-  line-height:1.4;
-}
-.main_img{
-  position:relative;
-  float:right;
-  top:-14px;
-}
-.main_img img{
-  width:130px;
-  padding:4px 4px 18px 4px;
-  margin:0 0 -7px 30px;
-  border:2px solid #bbb;
-  border-radius:15px;
-  animation-name:mainimg;
-  animation-duration:2s;
-}
-@keyframes mainimg{
-from{
-  transform:rotateY(45deg);
-  opacity:0;
-  }
-to{transform:rotateY(0deg);
-  opacity:1;
-  }
-}
-.img_text{
-  position:absolute;
-  padding-left:30px;
-  bottom:0;
-  width:100%;
-  text-align:center;
-  font-size:12px;
-}
-.footer{
-  background:#000;
-  color:#999;
-  padding:13px;
-  text-align:center;
-  font-size:12px;
-  animation-name:footer;
-  animation-duration:1s;
-}
-@keyframes footer{
-  from{
-    color:#000;
-    padding:4px;
-  }
-  to{
-    color:#999;
-    padding:13px;
-  }
-}
-@media screen and (max-width: 950px) {.row, .navbar {flex-direction: column;}}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lise Meitner - Ciencia sin Límites</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preload" href="lise_meitner.jpg" as="image">
+</head>
+<body>
+<div class="header">
+  <h1>Ciencia sin Límites</h1>
+</div>
+<div class="navbar">
+  <a href="index.html">Inicio</a>
+  <a href="rosalind_franklin.html">Rosalind Franklin</a>
+  <a href="barbara_mcclintock.html">Barbara McClintock</a>
+  <a href="marie_curie.html">Marie Curie</a>
+  <a href="lise_meitner.html">Lise Meitner</a>
+</div>
+<div class="icon-bar">
+  <a href="#" class="facebook" ><i class="fab fa-facebook "></i></a>
+  <a href="#" class="twitter"  ><i class="fab fa-twitter  "></i></a>
+  <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+  <a href="#" class="slack"    ><i class="fab fa-slack"    ></i></a>
+</div>
+<div class="row">
+  <div class="side">
+    <img src="lise_meitner.jpg">
+  </div>
+  <div class="main">
+    <h2>Lise Meitner</h2>
+    <h5>(7 de noviembre de 1878 - 27 de octubre de 1968)</h5><hr>
+    <p>Lise Meitner fue una física sueco-austríaca que contribuyó a los descubrimientos del elemento protactinium y Fisión nuclear. Mientras trabajaba en el Instituto Kaiser Wilhelm sobre radiactividad, descubrió el isótopo radiactivo protactinio-231 en 1917. En 1938, Meitner y su sobrino y físico Otto Robert Frisch descubrieron la fisión nuclear. A mediados de 1938, Meitner con los químicos Otto Hahn y Fritz Strassmann del Instituto Kaiser Wilhelm descubrió que bombardear el torio con neutrones producía diferentes isótopos. Hahn y Strassmann más adelante en el año demostraron que los isótopos de bario podrían formarse por bombardeo de uranio. A finales de diciembre, Meitner y Frisch resolvieron el fenómeno de tal proceso de escisión. En su informe de la edición de febrero de Nature de 1939, le dieron el nombre de "fisión". Este principio condujo al desarrollo de la primera bomba atómica durante la Segunda Guerra Mundial y, posteriormente, a otras armas nucleares y reactores nucleares.</p>
+    <ul>
+      <li>1946 - Nombrada Mujer del Año por el Club Nacional de Prensa</li>
+      <li> 1949 Medalla Max Planck</li>
+      <li> ForMemRS de 1955</li>
+      <li> 1960 Medalla Wilhelm Exner</li>
+      <li> 1966 Premio Enrico Fermi (compartido con Otto Hahn y Fritz Strassmann)</li>
+    </ul>
+  </div>
+</div>
+<div class="footer">
+  <p>Las imágenes mostradas son propiedad de sus respectivos dueños y solo se utilizaron aquí con fines meramente educativos.
+  <br>2021 Ciencia sin Límites.</p>
+</div>
+</body>
+</html>
