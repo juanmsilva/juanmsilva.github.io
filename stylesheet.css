@@ -12,8 +12,9 @@ hr{
   background-color:gray
 }
 .header{
-  background:#000 url(background_title.jpg) no-repeat top center;
+  background:#000 url(header_image.jpg) no-repeat top center;
   padding:28px;
+  position: 500px -850px;
   text-align:center;
   color:#0af;
   font:20px sofia;
@@ -22,8 +23,8 @@ hr{
   animation-duration:2s;
 }
 @keyframes header{
-  from{color: black;}
-  to{color: #0af;}
+  from{color:#000;}
+  to  {color:#0af;}
 }
 .navbar{
   display:flex;
@@ -35,7 +36,7 @@ hr{
 }
 @keyframes navbar{
   from{font-size:16px;}
-  to{font-size:14px;}
+  to  {font-size:14px;}
 }
 .navbar a{
   color:black;
@@ -62,14 +63,8 @@ hr{
   animation-duration:1.2s;
 }
 @keyframes icon-bar{
-  from{
-    padding:10px 20px;
-    color:#000;
-  }
-  to{
-    padding:4px 8px;
-    color:#ddd;
-  }
+  from{padding:10px 20px;color:#000;}
+  to  {padding: 4px  8px;color:#ddd;}
 }
 a.facebook:hover {background:#4267b2;transition:background .5s ease;}
 a.twitter:hover  {background:#55acee;transition:background .5s ease;}
@@ -86,7 +81,7 @@ a.slack:hover    {background:#4a154b;transition:background .5s ease;}
   background:#ddd;
   padding:20px;
 }
-.side img{
+.side img, video{
   width:250px;
   padding:5px;
   margin:20px auto;
@@ -98,51 +93,16 @@ a.slack:hover    {background:#4a154b;transition:background .5s ease;}
   animation-duration:2s;
 }
 @keyframes side_img{
-from{
-  transform:rotateY(45deg);
-  opacity:0;
-  }
-to{transform:rotateY(0deg);
-  opacity:1;
-  }
+from{transform:rotateY(45deg);opacity:0;}
+to  {transform:rotateY( 0deg);opacity:1;}
 }
 .main{
   flex:70%;
-  background-image:url(background_main.jpg);
-  padding:30px 50px 0 50px;
+  position: relative;
+  background-image:url(main_image.jpg);
+  padding: 30px 50px 0 50px;
   text-align:justify;
   line-height:1.4;
-}
-.main_img{
-  position:relative;
-  float:right;
-  top:-14px;
-}
-.main_img img{
-  width:130px;
-  padding:4px 4px 18px 4px;
-  margin:0 0 -7px 30px;
-  border:2px solid #bbb;
-  border-radius:15px;
-  animation-name:mainimg;
-  animation-duration:2s;
-}
-@keyframes mainimg{
-from{
-  transform:rotateY(45deg);
-  opacity:0;
-  }
-to{transform:rotateY(0deg);
-  opacity:1;
-  }
-}
-.img_text{
-  position:absolute;
-  padding-left:30px;
-  bottom:0;
-  width:100%;
-  text-align:center;
-  font-size:12px;
 }
 .footer{
   background:#000;
@@ -154,13 +114,7 @@ to{transform:rotateY(0deg);
   animation-duration:1s;
 }
 @keyframes footer{
-  from{
-    color:#000;
-    padding:4px;
-  }
-  to{
-    color:#999;
-    padding:13px;
-  }
+  from{color:#000;padding: 4px;}
+  to  {color:#999;padding:13px;}
 }
 @media screen and (max-width: 950px) {.row, .navbar {flex-direction: column;}}
