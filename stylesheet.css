@@ -37,27 +37,29 @@ hr{
   animation-duration:2.5s;
 }
 @keyframes header_a{
-  from{color:#000;}
-  to  {color:#0af;}
+    0%{color:#000;}
+   20%{color:#000;}
+  100%{color:#0af;}
 }
 .navbar{
   display:flex;
   background:#fb0;
   justify-content:center;
   font-size:14px;
-  animation-name:navbar;
-  animation-duration:2.5s;
-}
-@keyframes navbar{
-  from{font-size:16px;}
-  to  {font-size:14px;}
 }
 .navbar a{
-  color:black;
+  color:#000;
   padding:9px 20px;
   text-decoration:none;
   text-align:center;
   background:rgba(0,0,0,0);
+  animation-name:navbar;
+  animation-duration:2.5s;
+}
+@keyframes navbar{
+    0%{color:#fb0;}
+   20%{color:#fb0;}
+  100%{color:#000;}
 }
 .navbar a:link   {background:#fb0;}
 .navbar a:visited{background:#fb0;}
@@ -78,8 +80,9 @@ hr{
   animation-duration:2.5s;
 }
 @keyframes icon-bar{
-  from{padding:10px 20px;color:#000;}
-  to  {padding: 4px  8px;color:#ddd;}
+    0%{padding:10px 20px;color:#000;}
+   20%{padding:10px 20px;color:#000;}
+  100%{padding: 4px  8px;color:#ddd;}
 }
 a.facebook:hover {background:#4267b2;transition:background .5s ease;}
 a.twitter:hover  {background:#55acee;transition:background .5s ease;}
@@ -108,8 +111,9 @@ a.slack:hover    {background:#4a154b;transition:background .5s ease;}
   animation-duration:2.5s;
 }
 @keyframes side_img{
-from{transform:rotateY(45deg);opacity:0;}
-to  {transform:rotateY( 0deg);opacity:1;}
+    0%{transform:rotateY(45deg);opacity:0;}
+   20%{transform:rotateY(45deg);opacity:0;}
+  100%{transform:rotateY( 0deg);opacity:1;}
 }
 .main{
   flex:70%;
@@ -129,8 +133,9 @@ to  {transform:rotateY( 0deg);opacity:1;}
   animation-duration:2.5s;
 }
 @keyframes footer{
-  from{color:#000;padding:10px;}
-  to  {color:#999;padding:13px;}
+    0%{color:#000;}
+   20%{color:#000;}
+  100%{color:#999;}
 }
 @media screen and (max-width: 950px) {
   .row, .navbar {
