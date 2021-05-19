@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+    body {font-family: "Poppins"; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-areas: "colum_izq contenedor colum_der";}
+.logo {position: fixed;}
+.contacto {position: fixed; right: 0;}
+.seccion {height: 100vh; display: grid; grid-template-columns: 650px 325px;
+  grid-template-areas: "titulo imagen" "texto imagen";}
+.titulo {grid-area: titulo; display: grid; align-content: end; font-size: 24px; border: 1px dotted red;}
+.imagen {grid-area: imagen; border: 1px dotted red;}
+.texto {grid-area: texto; font-size: 16px; border: 1px dotted red;}
+@media screen and (max-width: 1100px) {
+  .seccion {grid-template-columns: 500px 250px;}
+  .titulo {font-size: 18px;}
+  .texto {font-size: 14px;}}
+@media screen and (max-width: 800px) {
+  body {grid-template-columns: 20px 1fr 20px;}
+  .seccion {grid-template-columns: 1fr 100px;}
+  .titulo {font-size: 14px;}
+  .texto {font-size: 12px; line-height: 24px;}}
+</style>
+
+<body>
+<div class="logo"><button><h3>Nombre</h3></button></div>
+<div class="contacto"><button><h3>Contacto</h3></button></div>
+<div class="colum_izq" style="border: 1px dotted red;"></div>
+<div class="contenedor">
+  <div class="seccion">
+    <div class="titulo"><h2>Content is like water, a saying that<br>illustrates the principles of RWD.</h2></div>
+    <div class="texto">
+      <p>Responsive web design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size.<br>
+        A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries.</p>
+    </div>
+    <div class="imagen" style="display: grid; justify-content: center; align-content: center;">
+      <div style="width: 100px; height: 100px; border: 10px solid #000;"></div>
+    </div>
+  </div>
+  <div class="seccion">
+    <div class="titulo"><h2>Content is like water, a saying that<br>illustrates the principles of RWD.</h2></div>
+    <div class="texto">
+      <p>Responsive web design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size.<br>
+        A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries.</p>
+    </div>
+    <div class="imagen" style="display: grid; justify-content: center; align-content: center;">
+      <div style="width: 100px; height: 100px; border: 10px solid #000;"></div>
+    </div>
+  </div>
+  <div class="seccion">
+    <div class="titulo"><h2>Content is like water, a saying that<br>illustrates the principles of RWD.</h2></div>
+    <div class="texto">
+      <p>Responsive web design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size.<br>
+        A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries.</p>
+    </div>
+    <div class="imagen" style="display: grid; justify-content: center; align-content: center;">
+      <div style="width: 100px; height: 100px; border: 10px solid #000;"></div>
+    </div>
+  </div>
+  <div class="seccion">
+    <div class="titulo" style="color: #ddd; background: #444;"><h2>Content is like water, a saying that<br>illustrates the principles of RWD.</h2></div>
+    <div class="texto" style="color: #ddd; background: #444;">
+      <p>Responsive web design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size.<br>
+        A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries.</p>
+    </div>
+    <div class="imagen" style="color: #ddd; background: #444; display: grid; justify-content: center; align-content: center;">
+      <div style="width: 100px; height: 100px; border: 10px solid #ddd;"></div>
+    </div>
+  </div>
+</div>
+<div class="colum_der" style="border: 1px dotted red;"></div>
+</body>
